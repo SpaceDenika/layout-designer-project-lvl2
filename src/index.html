@@ -4,9 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/app.css">
   <title>Music Box (SpaceDenika)</title>
 </head>
 <body class="root">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__navigation-block">
+        <div class="header__logo-wrapper">
+          <a href="#" class="header__logo-link">
+            <img src="./images/logo.svg" alt="logo" class="header__img">
+            <p class="header__title">Music Box</p>
+          </a>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link_active">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Исполнители</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <input type="search" class="header__search" placeholder="Поиск...">
+    </div>
+  </header>
+  <main class="main">
+    <section id="page-description" class="hero hero_background">
+      <div class="container hero__container">
+        <h1 class="hero__title">Онлайн музыка где угодно</h1>
+        <h2 class="hero__subtitle">без ограничений</h2>
+        <p class="hero__description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="hero__form form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Имя">
+            <input type="email" class="form__input" placeholder="Email">
+          </div>
+          <button type="submit" class="form__button">Получить доступ</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
