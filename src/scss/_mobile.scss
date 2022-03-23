@@ -1,0 +1,63 @@
+.mobile {
+  &__container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $darkGrayColor;
+  }
+
+  &__link {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: $whiteColor;
+    padding: 16px 40px;
+    border-radius: 32px;
+    background-color: $darkOrangeColor;
+    text-decoration: none;
+
+      &:hover {
+        background-color: #54230b;
+        transition: background-color .3s ease;
+      }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile {
+    &__container {
+      padding: 100px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    &__main {
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -588,6 +588,12 @@ h2 {
   text-decoration: none;
 }
 
+.article__author:hover {
+  color: #54230b;
+
+  transition: color 0.3s ease;
+}
+
 .article__date {
   margin: 0;
 
@@ -636,5 +642,67 @@ h2 {
   .article__title {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.mobile__container {
+  padding: 100px 0;
+}
+
+.mobile__title {
+  margin-bottom: 48px;
+
+  text-align: center;
+}
+
+.mobile__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile__info {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.mobile__description {
+  color: #cacaca;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.mobile__link {
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 32px;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 12.8px;
+  font-style: normal;
+  line-height: 150%;
+  text-decoration: none;
+
+  background-color: #95390c;
+}
+
+.mobile__link:hover {
+  background-color: #54230b;
+
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile__container {
+    padding: 100px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile__main {
+    flex-direction: column-reverse;
   }
 }

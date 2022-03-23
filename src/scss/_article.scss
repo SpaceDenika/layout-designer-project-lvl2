@@ -59,6 +59,11 @@
     text-transform: uppercase;
     color: $orangeColor;
     text-decoration: none;
+
+      &:hover {
+        color: #54230b;
+        transition: color .3s ease;
+      }
   }
 
   &__date {
