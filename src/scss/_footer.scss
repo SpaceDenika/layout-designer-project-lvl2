@@ -1,0 +1,110 @@
+.footer {
+  &_background {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+ }
+
+  &__navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__upper-section {
+    padding: 3rem 0;
+    position: relative;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        border-bottom: 1px solid $darkGrayColor;
+        max-width: 100%;
+        width: 100%;
+      }
+  }
+
+  &__navigation-item {
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grayColor;
+    text-decoration: none;
+
+     &:hover {
+       color: $linkHoverColor;
+       transition: color .3s ease;
+     }
+  }
+
+  &__links-group {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__lower-section {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__lower-section-list {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__navigation {
+      padding: 0 20px;
+    }
+
+    &__lower-section {
+      padding: 2rem 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__navigation {
+      flex-direction: column;
+    }
+
+    &__lower-section-list {
+      flex-direction: column;
+    }
+  }
+}
