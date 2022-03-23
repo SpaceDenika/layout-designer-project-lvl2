@@ -375,7 +375,7 @@ h2 {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .subscribe__container {
     padding: 100px 20px 0;
   }
@@ -488,7 +488,7 @@ h2 {
 
   color: #fff;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   line-height: 150%;
   text-align: center;
@@ -501,6 +501,139 @@ h2 {
 
   .cards__title {
     font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.news__container {
+  padding: 100px 0 0;
+}
+
+.news__title {
+  margin-bottom: 48px;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .news__container {
+    padding: 100px 20px 0;
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.article__item {
+  display: flex;
+  gap: 50px;
+}
+
+.article__item_reverse {
+  flex-direction: row-reverse;
+}
+
+.article__img {
+  width: 100%;
+  max-width: 575px;
+  height: auto;
+}
+
+.article__title {
+  margin-top: 0;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+.article__description {
+  color: #cacaca;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.article__info {
+  display: flex;
+  gap: 16px;
+}
+
+.article__avatar {
+  width: 19px;
+  height: 19px;
+}
+
+.article__author {
+  margin: 0;
+
+  color: #f89202;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.article__date {
+  margin: 0;
+
+  color: #cacaca;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 19px;
+}
+
+.article__link {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 48px;
+  padding: 16px 30px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+
+  color: #cacaca;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.article__link:hover {
+  border-color: #3f1985;
+
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+  opacity: 0.9;
+
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__item {
+    flex-direction: column;
+  }
+
+  .article__title {
     font-size: 16px;
     line-height: 24px;
   }
