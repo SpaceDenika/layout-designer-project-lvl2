@@ -1,0 +1,27 @@
+.subscribe {
+  &__container {
+    padding: 100px 0 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $whiteColor;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    &__container {
+      padding: 100px 20px 0;
+    }
+  }
+}

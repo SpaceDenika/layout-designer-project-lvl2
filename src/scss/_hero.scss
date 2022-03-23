@@ -1,0 +1,40 @@
+.hero {
+  &_background {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $whiteColor;
+    padding: 0;
+    margin: 31px 0 17px;
+  }
+}
+
+// adaptive 
+
+@media screen and (max-width: 768px) {
+  .hero {
+    &__container {
+      padding: 250px 20px 200px;
+    }
+
+    &__description {
+      margin: 16px 0;
+    }
+  }
+}

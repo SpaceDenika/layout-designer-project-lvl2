@@ -1,0 +1,46 @@
+.navigation {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+    line-height: 0;
+    align-items: center;
+  }
+  
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $darkGrayColor;
+
+      &_active {
+        color: $whiteColor;
+      }
+
+      &:hover {
+        color: $linkHoverColor;
+        transition: color .3s ease;
+      }
+  }
+}
+
+// adaptive 
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    &__list {
+      flex-direction: column;
+      gap: 3px;
+      align-items: flex-start;
+    }
+
+    &__link {
+      line-height: 13px;
+    }
+  }
+}
