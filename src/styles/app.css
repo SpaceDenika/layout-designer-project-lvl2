@@ -818,3 +818,75 @@ h2 {
     flex-direction: column;
   }
 }
+
+.performer_background {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.performer__count {
+  margin-bottom: 48px;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.performer__buttons-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.performer__button {
+  display: flex;
+  gap: 16px;
+  width: 200px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 12.8px;
+  font-style: normal;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.performer__button_mix {
+  background-color: #5328a1;
+}
+
+.performer__button_mix:hover {
+  background-color: #371b6a;
+
+  transition: background-color 0.3s ease;
+}
+
+.performer__button_favorites {
+  background-color: #95390c;
+}
+
+.performer__button_favorites:hover {
+  background-color: #5a2207;
+
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .performer__container {
+    padding: 200px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .performer__buttons-group {
+    flex-direction: column;
+  }
+}
