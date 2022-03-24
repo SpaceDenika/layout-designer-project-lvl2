@@ -1,6 +1,6 @@
-.discography {
+.similar {
   &__container {
-    padding: 100px 0 0;
+    padding: 100px 0;
   }
 
   &__title {
@@ -8,14 +8,14 @@
   }
 
   &__list {
-    list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    gap: 25px 50px;
     flex-wrap: wrap;
+    gap: 25px 50px;
   }
-  
+
   &__link {
     text-decoration: none;
     display: flex;
@@ -27,6 +27,7 @@
     }
   }
 
+
   &__img {
     width: 250px;
     height: 250px;
@@ -37,41 +38,40 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
+    text-align: center;
     color: $whiteColor;
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 18px;
   }
 
-  &__year {
-    margin: 0;
+  &__count {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    text-align: center;
     color: $grayColor;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .discography {
+  .similar {
     &__container {
-      padding: 100px 20px 0;
-    }
-
-    &__list {
-      justify-content: center;
+      padding: 100px 20px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .discography {
+  .similar {
     &__img {
       width: 137px;
       height: 137px;
     }
 
-    &__list {
-      justify-content: flex-start;
+    &__link {
+      max-width: 137px;
     }
   }
 }
