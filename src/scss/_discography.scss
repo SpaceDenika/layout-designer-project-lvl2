@@ -1,0 +1,76 @@
+.discography {
+  &__container {
+    padding: 100px 0 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px 50px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  &__item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: $whiteColor;
+    margin-bottom: 0;
+  }
+
+  &__year {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grayColor;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .discography {
+    &__container {
+      padding: 100px 20px 0;
+    }
+
+    &__list {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discography {
+    &__img {
+      width: 137px;
+      height: 137px;
+    }
+
+    &__title {
+      text-align: start;
+    }
+
+    &__list {
+      justify-content: flex-start;
+    }
+  }
+}
