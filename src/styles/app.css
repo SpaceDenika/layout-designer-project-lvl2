@@ -720,6 +720,9 @@ h2 {
 .footer__links-group {
   display: flex;
   gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__lower-section {
@@ -755,7 +758,7 @@ h2 {
 }
 
 .performer_background {
-  background-image: url("../images/Morten Harket.png");
+  background-image: url("../images/MortenHarket.png");
   background-position: center;
   background-size: cover;
 }
