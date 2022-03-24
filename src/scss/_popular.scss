@@ -1,0 +1,42 @@
+.popular {
+  &__container {
+    padding: 100px 0 0 ;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  &__tracks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .popular {
+    &__container {
+      padding: 100px 20px 0;
+    }
+
+    &__tracks {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popular {
+    &__title {
+      text-align: start;
+    }
+
+    &__tracks {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

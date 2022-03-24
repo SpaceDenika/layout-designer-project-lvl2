@@ -1,0 +1,54 @@
+.tracks {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 551px;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__img {
+    width: 55px;
+    height: 55px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.8px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin: 0;
+  }
+
+  &__performer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: $grayColor;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      color: $linkHoverColor;
+      transition: color .3s ease;
+    }
+  }
+
+  &__duration {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: $grayColor;
+  }
+}
